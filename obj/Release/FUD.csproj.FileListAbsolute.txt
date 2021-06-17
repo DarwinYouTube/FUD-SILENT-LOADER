@@ -1,0 +1,7 @@
+C:\Users\Darwin\source\repos\FUD\FUD\bin\Release\FUD.exe.config
+C:\Users\Darwin\source\repos\FUD\FUD\bin\Release\FUD.exe
+C:\Users\Darwin\source\repos\FUD\FUD\bin\Release\FUD.pdb
+C:\Users\Darwin\source\repos\FUD\FUD\obj\Release\FUD.csproj.CoreCompileInputs.cache
+C:\Users\Darwin\source\repos\FUD\FUD\obj\Release\FUD.exe
+C:\Users\Darwin\source\repos\FUD\FUD\obj\Release\FUD.pdb
+C:\Users\Darwin\source\repos\FUD\FUD\obj\Release\FUD.csproj.AssemblyReference.cache
